@@ -31,6 +31,12 @@
 
   :plugins [[lein-environ "1.0.1"]
             [lein-uberwar "0.1.0"]]
+
+  :uberwar {:handler first-web.handler/app
+            :init first-web.handler/init
+            :destroy first-web.handler/destroy
+            :name "firstWeb.war"}
+
   :profiles
   {:uberjar {:omit-source true
              :env {:production true}
