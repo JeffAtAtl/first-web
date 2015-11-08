@@ -29,7 +29,8 @@
 
   :main first-web.core
 
-  :plugins [[lein-environ "1.0.1"]]
+  :plugins [[lein-environ "1.0.1"]
+            [lein-uberwar "0.1.0"]]
   :profiles
   {:uberjar {:omit-source true
              :env {:production true}
